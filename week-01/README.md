@@ -7,10 +7,10 @@ Understand the available datasets, identify data quality issues and develop init
 - Data profiling summary – Jency
 - Customer and sales business questions – Rofiat
 - Warehouse KPIs and business questions – Zainab
-- Product and supplier business questions – Frank (Pending)
+- Product and supplier business questions – Frank 
 - Scrum Master sprint notes – Zainab
 
  Week 1 Results
 The team identified data quality concerns involving duplicate identifiers, inventory stock levels, date formats and warehouse capacity formatting.
 
-Three of four assigned deliverables have been submitted. Frank's contribution remains outstanding.
+All four assigned analytical deliverables have been submitted. The Scrum Master sprint notes document the team's progress and activities.
