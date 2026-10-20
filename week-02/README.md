@@ -1,50 +1,62 @@
-Week 2 – Clean and Define
+# Week 2 – Clean and Define
 
-Project: Heavy Supplier, Inventory & Warehouse Analytics
-Team: Jency, Frank, Rofiat, Zainab
-Week 2 goal: Cleaning is underway and all metrics have agreed definitions.
-Status: Mostly complete. Three of four tasks finished. Jency's data cleaning is still outstanding.
+**Project:** Heavy Supplier, Inventory & Warehouse Analytics  
+**Team:** Jency, Frank, Rofiat, Zainab  
+**Goal:** Clean the data and agree on metric definitions.  
+**Status:** Mostly complete — three of four tasks finished.
 
-What we delivered this week
+## What We Delivered This Week
 
-KPI Framework (Zainab) — done.
-We now have 13 agreed ways to measure the warehouse, with a name, formula and plain-English meaning for each. They cover four areas: warehouse cost and performance, inventory health, stock movement, and checking whether our stock records match reality. We also agreed six data-quality checks that must pass before any number is trusted.
+### 1. KPI Framework — Zainab (Completed)
 
-Metric Rules (Frank) — done.
-We agreed how to classify products and stock:
+Defined 13 warehouse KPIs, each with a name, formula and plain-English meaning. The KPIs cover:
 
-ABC: products ranked by revenue, with the top 80% of revenue as A, the next 15% as B, and the last 5% as C. Result: 10 A products bring in about 81% of revenue, and just two products (P014 and P015) bring in about 36%.
+- Warehouse cost and performance
+- Inventory health
+- Stock movement
+- Stock record accuracy
 
-Movement: rules for fast, medium, slow and dead stock. Result: all 180 product-branch combinations came out as fast-moving, which is suspicious and needs checking.
+Six data-quality checks were also agreed upon before trusting the results.
 
-Stock health: days of cover compared to lead time. Result: all 180 combinations are "excess" stock — about 31,000 to 39,000 days of cover. This is not believable and points to a data problem.
+### 2. Metric Rules — Frank (Completed)
 
-Suppliers: rules for on-time delivery, delays, cancellation rate and spend. Result: all 8 suppliers look almost identical, which matches what we found in Week 1.
+**ABC classification:** Products are ranked by revenue: the top 80% is A, the next 15% is B, and the final 5% is C.
 
-Customer Rules (Rofiat) — done.
-We defined what counts as a churned customer, a repeat customer, a high-value customer, and how to measure purchase frequency. Rofiat also set up Python for the next stage.
+- Ten A products generate approximately 81% of revenue.
+- Products P014 and P015 account for approximately 36% of revenue.
 
-Data Cleaning and Data Dictionary (Jency) — not received.
-This was the Friday deliverable and it is still missing. Without it we cannot produce the cleaned tables. This needs to be chased.
+**Stock movement:** Rules were defined for fast-, medium-, slow- and dead-moving stock. All 180 product-branch combinations were classified as fast-moving, which requires investigation.
 
-Decisions we still need to make
+**Stock health:** Days of cover were compared with lead time. All 180 combinations were classified as excess stock, with approximately 31,000–39,000 days of cover. These results are implausible and suggest a data or calculation issue.
 
-Is the stock level of about 107,000 units per product per branch real, or a data error? This blocks all inventory results.
+**Supplier performance:** Rules were defined for on-time delivery, delays, cancellation rate and spend. All eight suppliers showed very similar results, consistent with the concern identified in Week 1.
 
-Which table is the correct source for reorder level, safety stock and max stock?
+### 3. Customer Rules — Rofiat (Completed)
 
-Should cancelled orders be excluded from all analysis? We have assumed yes.
+Defined rules for identifying churned customers, repeat customers and high-value customers, alongside purchase frequency. Python was also set up for the next stage.
 
-Is the margin column markup or margin? Frank says markup.
+### 4. Data Cleaning and Data Dictionary — Jency (Outstanding)
 
-Do we accept the ABC 80/15/5 cut-offs, and should ABC be based on revenue or profit?
+The Friday deliverable has not yet been received. The cleaned tables cannot be completed until the data cleaning and data dictionary are available.
 
-Is 180 days the right rule for dead stock?
+## Decisions Still Required
 
-How many days without a purchase counts as churn?
+1. Is the stock level of approximately 107,000 units per product per branch genuine or a data error?
+2. Which table is the correct source for reorder level, safety stock and maximum stock?
+3. Should cancelled orders be excluded from all analyses? The current assumption is yes.
+4. Does the margin column represent markup or margin? Frank's interpretation is markup.
+5. Are the ABC 80/15/5 cut-offs appropriate, and should classification be based on revenue or profit?
+6. Is 180 days without movement the right definition of dead stock?
+7. How long without a purchase should qualify a customer as churned?
 
-Blockers
-Jency's data cleaning and data dictionary have not been received. The cleaned tables cannot be completed until they are.
+## Blockers
 
-Next week (Week 3)
-Jency merges all the tables and creates new columns such as stock age and lead time. The rest of us test our analysis on the partial data and report problems. Zainab also sets up the Power BI template so all dashboards look the same. Friday deliverable: merged dataset and the Power BI template.
+Jency's data cleaning and data dictionary deliverables remain outstanding. The cleaned tables cannot be finalised until these are received.
+
+## Week 3 Plan
+
+- **Jency:** Merge the tables and create additional fields, including stock age and lead time.
+- **Team:** Test analyses using the available data and document anomalies.
+- **Zainab:** Set up a Power BI template to standardise dashboard design.
+
+**Friday deliverables:** Merged dataset and Power BI template.
